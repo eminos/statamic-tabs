@@ -1,0 +1,12 @@
+{
+  "resources/css/statamic-tabs.css": {
+    "file": "assets/statamic-tabs-1bd0fef2.css",
+    "isEntry": true,
+    "src": "resources/css/statamic-tabs.css"
+  },
+  "resources/js/statamic-tabs.js": {
+    "file": "assets/statamic-tabs-46174ef8.js",
+    "isEntry": true,
+    "src": "resources/js/statamic-tabs.js"
+  }
+}
