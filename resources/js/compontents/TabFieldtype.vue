@@ -172,17 +172,27 @@ export default {
                 })
             }
         })
+
+        this.$nextTick(() => {
+            const publishField = this.$el.closest('.publish-field')
+            const display = window.getComputedStyle(publishField).display
+            if (display === 'none') {
+                this.tab.hidden = true
+            } else {
+                this.tab.hidden = false
+            }
+        })
     },
 
     created() {
         // observe the tab publish field and its display property
         this.$nextTick(() => {
-            const publishField = this.$el.closest('.publish-field');
+            const publishField = this.$el.closest('.publish-field')
 
             const observer = new MutationObserver(mutations => {
                 mutations.forEach(mutation => {
                     if (mutation.type === 'attributes' && mutation.attributeName === 'style') {
-                        const display = window.getComputedStyle(publishField).display;
+                        const display = window.getComputedStyle(publishField).display
                         if (display === 'none') {
                             this.tab.hidden = true
                         } else {
@@ -192,7 +202,7 @@ export default {
                 });
             });
 
-            observer.observe(publishField, { attributes: true, attributeFilter: ['style'] });
+            observer.observe(publishField, { attributes: true, attributeFilter: ['style'] })
         });
     },
 };

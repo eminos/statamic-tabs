@@ -18,7 +18,7 @@
     },
     "extra": {
         "statamic": {
-            "name": "Statamic Field Item Relationship",
+            "name": "Statamic Tabs",
             "description": "A Statamic addon to be able to group fields into tabs."
         },
         "laravel": {
