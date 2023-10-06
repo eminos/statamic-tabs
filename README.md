@@ -22,7 +22,7 @@ composer require eminos/statamic-tabs
 
 ## Usage
 
-You just add a Tab field whereever you want to start a new tab. 
+You just add a Tab field wherever you want to start a new tab. 
 
 All the fields that comes after it (and that are not an other tab field) will end up in that tab.
 
