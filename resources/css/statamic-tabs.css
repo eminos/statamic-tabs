@@ -9,3 +9,7 @@
     width: 0;
     height: 0;
 }
+
+.tabpanel > .help-block {
+    margin-top: 0 !important;
+}

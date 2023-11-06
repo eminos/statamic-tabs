@@ -1,11 +1,11 @@
 {
   "resources/css/statamic-tabs.css": {
-    "file": "assets/statamic-tabs-1bd0fef2.css",
+    "file": "assets/statamic-tabs-77515875.css",
     "isEntry": true,
     "src": "resources/css/statamic-tabs.css"
   },
   "resources/js/statamic-tabs.js": {
-    "file": "assets/statamic-tabs-a795db86.js",
+    "file": "assets/statamic-tabs-dbf54b3e.js",
     "isEntry": true,
     "src": "resources/js/statamic-tabs.js"
   }

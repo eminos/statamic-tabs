@@ -10,10 +10,11 @@
             </div>
         </div>
 
-        <div role="tabpanel" v-for="tab, index in tabs" class="tabpanel" :class="{ block: tab.active, hidden: !tab.active }" :id="'tab-content-' + tab.id" :style="tabPanelStyle">
-            <div class="publish-fields @container w-full"></div>
+        <div role="tabpanel" v-for="tab, index in tabs" class="tabpanel" :class="{ block: tab.active, hidden: !tab.active }" :id="'tab-content-' + tab.id">
+            <div :style="tabPanelStyle">
+                <div class="publish-fields @container w-full"></div>
+            </div>
         </div>
-
     </div>
 </template>
 
@@ -120,6 +121,21 @@ export default {
         } else {
             this.$events.$emit('tabs.push-' + this.mainTab.dataset.uniqid, this.tab)
         }
+
+        /** Move the tab field instructions to the right place */
+        this.$nextTick(() => {
+            const instructions = this.$el.closest('.publish-field').querySelector('.help-block')
+            if (instructions) {
+                if (this.isMainTab) {
+                    document.getElementById('tab-content-' + this.tabs[0].id).prepend(instructions)
+                    this.$events.$on('tabs.prepend-instructions-' + this.tab.id, (element, id) => {
+                        document.getElementById('tab-content-' + id).prepend(element)
+                    })
+                } else {
+                    this.$events.$emit('tabs.prepend-instructions-' + this.mainTab.dataset.uniqid, instructions, this.tab.id)
+                }
+            }
+        })
 
         /** Find all next siblings that are fields, but stop if you encounter an other tab */
         let element = this.$el.closest('.publish-field')
