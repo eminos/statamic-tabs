@@ -167,17 +167,15 @@ export default {
             }
         })
 
-        this.$nextTick(() => {
-            // Hide the label from the main tab
-            if (this.isMainTab) {
-                this.$el.closest('.publish-field').querySelector('label').classList.add('super-invisible')
-            }
+        // Hide the label from the main tab
+        if (this.isMainTab) {
+            this.$el.closest('.publish-field').querySelector('label').classList.add('super-invisible')
+        }
 
-            // Make the now empty publish field invisible without touching the display property, so that we can track it with a MutationObserver
-            if (! this.isMainTab) {
-                this.$el.closest('.publish-field').classList.add('super-invisible')
-            }
-        })
+        // Make the now empty publish field invisible without touching the display property, so that we can track it with a MutationObserver
+        if (!this.isMainTab) {
+            this.$el.closest('.publish-field').classList.add('super-invisible')
+        }
 
         this.$nextTick(() => {
             if (this.isMainTab) {
