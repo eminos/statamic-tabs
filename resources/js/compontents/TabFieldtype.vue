@@ -5,7 +5,7 @@
                 <button v-for="tab, index in tabs" role="tab" class="tab-button" :class="{ active: tab.active, hidden: tab.hidden }" @click="setTabActive(index)">
                     <iconify-icon v-if="tab.iconify_icon" :icon="tab.iconify_icon" class="h-4 w-4 text-lg mr-2" />
                     <svg-icon v-else-if="tab.icon" :name="tab.icon" class="h-4 w-4 mr-2" />
-                    {{ tab.name }}
+                    {{ __(tab.name) }}
                 </button>
             </div>
         </div>
