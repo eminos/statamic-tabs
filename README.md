@@ -1,12 +1,12 @@
 # Statamic Tabs
 
-A Statamic plugin to add a Tab Fieldtype. Add tabs anywhere you have other fields!
+A Statamic addon to add a Tab Fieldtype. Add tabs anywhere you have other fields!
 
 ![Screenshot of Tabs](docs/screenshot1.png)
 
 ## Installation
 
-Install this plugin using composer.
+Install this addon using composer.
 
 ```cli
 composer require eminos/statamic-tabs
