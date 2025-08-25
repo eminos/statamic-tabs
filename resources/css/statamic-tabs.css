@@ -1,5 +1,6 @@
-/* @import "tailwindcss/components";
-@import "tailwindcss/utilities"; */
+@import "tailwindcss" prefix(tabs);
+
+/* Tailwind CSS v4 zero-config (customization can use @theme / @plugin if needed) */
 
 .super-invisible {
     visibility: hidden;

@@ -4,13 +4,15 @@
     "description": "A Statamic addon to be able to group fields into tabs.",
     "license": "MIT",
     "require": {
-        "statamic/cms": "^3.0||^4.0||^5.0"
+        "statamic/cms": "^3.0||^4.0||^5.0||^6.0"
     },
     "require-dev": {
-        "php": "^8.1",
+        "php": "^8.3",
         "laravel/framework": "^11.0",
-        "statamic/cms": "^5.0"
+        "statamic/cms": "^6.0@alpha"
     },
+    "minimum-stability": "alpha",
+    "prefer-stable": true,
     "autoload": {
         "psr-4": {
             "Eminos\\StatamicTabs\\": "src"
