@@ -1,6 +1,6 @@
-@import "tailwindcss" prefix(tabs);
+@import "@statamic/cms/tailwind.css";
 
-/* Tailwind CSS v4 zero-config (customization can use @theme / @plugin if needed) */
+@source "../js";
 
 .super-invisible {
     visibility: hidden;

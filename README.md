@@ -12,6 +12,13 @@ Install this addon using composer.
 composer require eminos/statamic-tabs
 ```
 
+## Statamic support
+
+| Statamic version | Addon version | Addon branch |
+| --- | --- | --- |
+| Statamic 5 | `1.x` | `1.x` |
+| Statamic 6 | `2.x` | `main` |
+
 ## Features
 
 - Add Tabs anywhere you need them. Entry, side panel, Replicator set, Bard set, Global set, etc...
