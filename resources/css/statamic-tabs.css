@@ -11,6 +11,11 @@
     height: 0;
 }
 
+/* If we hide the label, also remove the wrapper spacing (Tailwind's `mb-1.5`). */
+div[data-ui-field-text]:has(> label[data-ui-label].super-invisible) {
+    margin-bottom: 0 !important;
+}
+
 .tabpanel > .help-block {
     margin-top: 0 !important;
 }

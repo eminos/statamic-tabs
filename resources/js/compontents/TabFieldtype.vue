@@ -3,7 +3,7 @@
         <div class="" v-if="isMainTab">
             <Tabs v-model="currentTab" :unmount-on-hide="false">
                 <TabList>
-                    <TabTrigger v-for="tab in tabs" :key="tab.id" :name="tab.id">
+                    <TabTrigger v-for="tab in tabs" :key="tab.id" :name="tab.id" :class="{ hidden: tab.hidden }">
                         <div class="flex items-center gap-2">
                             <IconifyIcon v-if="tab.iconify_icon" :icon="tab.iconify_icon" class="size-4 shrink-0" />
                             <Icon v-else-if="tab.icon" :name="tab.icon" />
@@ -361,7 +361,7 @@ const moveSiblings = () => {
         });
     }
     
-    registerTimeout(hideLabels, 0); 
+    registerTimeout(hideLabels, 0);
 };
 
 const hideLabels = () => {

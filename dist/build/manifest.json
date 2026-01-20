@@ -1,6 +1,6 @@
 {
   "resources/css/statamic-tabs.css": {
-    "file": "assets/statamic-tabs-DvZDp6rl.css",
+    "file": "assets/statamic-tabs-DrOEk_qL.css",
     "src": "resources/css/statamic-tabs.css",
     "isEntry": true,
     "name": "statamic-tabs",
@@ -9,7 +9,7 @@
     ]
   },
   "resources/js/statamic-tabs.js": {
-    "file": "assets/statamic-tabs-DZ5w1pBK.js",
+    "file": "assets/statamic-tabs-BGd2c8PQ.js",
     "name": "statamic-tabs",
     "src": "resources/js/statamic-tabs.js",
     "isEntry": true
